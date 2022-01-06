@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    justify-content: right;
+}
+.link {
+    margin-right: 50px;
+    text-decoration: none;
+    color: black;
+}
+.link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+.link:hover::after {
+    width: 100%;
+}
+.link:hover{
+    color: red;
+    transform: scale(1.1);
+}
+h1 {
+    color: cornflowerblue;
+}
